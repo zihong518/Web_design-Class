@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+body{  /*全部的字體設為微軟正黑體*/
+	font-family:"微軟正黑體";
+}
+#top{  /*最新消息區*/
+	margin-top: 10px
+}
+#top a{  /*最新消息區*/
+	color:#567536; 
+	text-decoration: none;
+}
+#main img{
+	width: 100%;
+}
+
+#main{  /*主框架*/
+	margin: 2% 10% 2% 10%;
+	border-style:dotted;
+	border-width: 3px;
+	border-color: #BA8AB9;
+	padding: 1%;
+
+}
+
+#left{   /*商品分類區*/
+	margin: 1% 3% 0px 1%;
+	width: 18%; 
+	padding: 1%;
+	text-align:center;
+	display:inline-block;
+	vertical-align:top;
+}
+#left a{  /*商品分類區*/
+	text-align: center;
+	padding:10% 3% 10% 3%;
+	text-decoration:none;
+	background:#4ead93;
+	margin:10% auto 10% auto;
+	color:#0B3900 ;
+	display:block;
+}
+#left2{
+	width: 95%;
+	background: pink;
+	padding: 0.1%;
+	display: none;
+}
+#right{   /*商品分類區*/
+	
+	width: 70%;
+	border-style:double; 
+	border-width: 3px;
+	border-color: #4682B4;
+	padding: 1%;
+	height:550px;
+	text-align:center;
+	display:inline-block;
+	overflow: auto;
+}
+#item   /*表格格式、大小*/
+{
+	width:80%;
+	margin:10px auto 10px auto;
+}
+#item td  /*表格td 大小、格式*/
+{
+	min-width:50%;
+	padding:15px;
+}
+#item1   /*分類表格格式、大小*/
+{
+	width:100%;
+	margin:10px auto 10px auto;
+}
+
+#bottom  /*頁尾版權區*/
+{
+	padding: 3%;
+	background:#613E60 ;
+	background-size:cover;
+	text-align: center;
+	color: #fff
+
+}
+.title  /*表格標題底色*/
+{
+	background:#4682B4;
+}
+.title td  /*表格標題底色*/
+{
+	background:	#4682B4;
+}
+.content  /*表格內文圖片底色*/
+{
+	background:	#B0C4DE;
+}
+.content td  /*表格內文底色和文字置左*/
+{
+	text-align: left;
+	background:	#B0E0E6;
+}
+#pic{  /*表格小圖*/
+	width:85%; 
+}
+#pic1{		/*表格大圖*/
+	width:85%;
+}
+.mid{
+	text-align: center;
+}
+.people{
+	color: red;
+	font-size: 28px;
+}
+#look{ 		/*"點我看更多"格式*/
+	float:right;
+	right:10px;
+	color: #fff;
+	background-color: #1A4972 ;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #1A4972;
+	text-decoration:none;
+	font-size: 10px
+
+}
+
+.first 		/*商品分類區格式*/
+{
+	display:none;
+}
+div.item:hover > div.first
+{
+	display:block;
+
+}
+#second a
+{
+	background-color: #69e0c0;
+	position:relative;
+	left:20px;
+}
+
+.topic{ 	/*商品介紹區標題格式*/
+	background-color:#B8DAF7 ;
+	margin: 1%;
+	padding: 1%;
+  	font-size: 30px;
+  	font-weight: bolder;
+  	text-align:center;
+}
+
+.for{		/*改內文的顏色、格式*/
+	font-size: 20px;
+	color: #5B85AA ;
+	text-align:left;
+}
+
+
+.news{		/*最新消息區的新聞底線用不見和改顏色!!*/
+	text-decoration: none;
+	color: #9E6814 ;
+}
+
+@media screen and (max-width:1000px) and (min-width:600px) { /* 平板電腦 */
+            #left{   /*商品分類區*/
+                margin: 1% 3% 0px 1%;
+                width: 97%; 
+                padding: 1%;
+                text-align:center;
+                display:block;
+                vertical-align:top;
+            }
+            #left a{  /*商品分類區*/
+                    text-align: center;
+                    padding:1% 3% 1% 3%;
+                    text-decoration:none;
+                    background:#4ead93;
+                    margin:1% 1% 1% 1%;
+                    color:#0B3900 ;
+                    display:block;
+                }
+            #second a{
+                    background-color: #69e0c0;
+                    position:relative;
+                    left:20px;
+                }
+            #right{   /*商品分類區*/
+		            width: 97%;
+		            border-style:double; 
+		            border-width: 3px;
+		            border-color: #4682B4;
+		            padding: 1%;
+		            height:550px;
+		            display:inline-block;
+		            overflow: auto;
+        		}
+            #main{  /*主框架*/
+		            margin: 2% 0% 2% 0%;
+		            border-style:dotted;
+		            border-width: 3px;
+		            border-color: #BA8AB9;
+		            padding-right: : 20%;           
+        		}
+
+}
+@media screen and (max-width:599px) { 
+		body{
+ 				font-size:small; 
+		}
+		#left{   /*商品分類區*/
+		        margin: 1% 3% 0px 1%;
+		        width: 97%; 
+		        text-align: center;
+		        text-align:center;
+		        display:block;
+
+            }
+	    #left a{  /*商品分類區*/
+		    	writing-mode:vertical-rl;
+				text-align: center;
+				height: 100px;
+				margin-bottom: : 10%;
+				border-style: solid;
+				border-width: 0.5px;
+				border-color: black;
+				text-decoration:none;
+				background:#4ead93;
+				color:#0B3900 ;
+				float: left;
+
+		}
+		#right{   /*商品分類區*/
+	            width: 97%;
+	            border-style:double; 
+	            border-width: 3px;
+	            border-color: #4682B4;
+	            padding: 1%;
+	            height:550px;
+	            display:block;
+	            overflow: auto;
+        }
+        #main{  /*主框架*/
+			margin: 1%;
+			border-style:dotted;
+			border-width: 3px;
+			border-color: #BA8AB9;
+			padding: 1%;
+
+		}
+        #people{
+			color: red;
+			font-size: 20px;
+			margin: 10%
+			background: blue;
+			display:block;
+		}
+		#second a{
+			background-color: #69e0c0;
+			position:relative;
+			left:-1%;
+			}
+
+
+}
